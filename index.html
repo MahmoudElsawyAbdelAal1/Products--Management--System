@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width">
+  <title>ProductsManagementSystem</title>
+  <link rel="stylesheet" href="stayle.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>ProductsManagementSystem</h1>
+    <input id="TITLE" type="text" placeholder="TITLE">
+    <div class="fiveinputs">
+      <input onkeyup="getTotal()" id="PRICE" type="number" placeholder="PRICE">
+      <input onkeyup="getTotal()" id="TAXES" type="number" placeholder="TAXES">
+      <input onkeyup="getTotal()" id="ADS" type="number" placeholder="ADS">
+      <input onkeyup="getTotal()" id="DISCOUNT" type="number" placeholder="DISCOUNT">
+      <small id="total"></small>
+    </div>
+    <input id="count" type="number" placeholder="COUNT">
+    <input id="GATEGORY" type="text" placeholder="GATEGORY">
+    <button id="create" >Create</button>
+    <input  id="search"  type="text" placeholder="Search">
+    <div class="towbutton">
+      <button id="Search By TITLE"    onclick=" getSearchType(this.id)"  >Search By TITLE</button>
+      <button id="Search By GATEGORY" onclick=" getSearchType(this.id)" >Search By GATEGORY</button>
+    </div>
+    <div id="deleteAll">
+
+
+    </div>
+    <hr>
+    <table id="tbl">
+      <tr id="th">
+        <td class="id">ID</td>
+        <td>TITLE</td>
+        <td>PRICE</td>
+        <td>TAXES</td>
+        <td>ADS</td>
+        <td>DISCOUNT</td>
+        <td>TOTAL</td>
+        <td>GATEGORY</td>
+        <td>UPDATE</td>
+        <td class="del">DELETE</td>
+      </tr>
+      <tbody id="tbody">
+
+      </tbody>
+
+    </table>
+
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

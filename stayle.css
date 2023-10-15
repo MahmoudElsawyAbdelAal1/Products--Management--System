@@ -1,0 +1,123 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Saira:wght@700&display=swap'); */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-weight: bold;
+    
+}
+
+body {
+    /* font-family: 'Poppins', sans-serif; */
+background-color:#222;
+overflow:scroll;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    transition: all 0.5s ease;
+    
+}
+
+table {
+    display: inline-block;
+    color: #fff;
+}
+
+table td {
+    padding: 0 20px;
+
+}
+
+table .id {
+    padding-left: 0px;
+
+}
+
+table .del {
+    padding-right: 0px;
+
+
+}
+
+h1 {
+    text-align: center;
+    color: hsl(257, 72%, 8%);
+    padding-top: 20px;
+    background-color: rgb(255, 174, 0);
+    margin-top: 20px;
+}
+
+input {
+    height: 40px;
+    
+
+}
+.towbutton{
+display: flex;
+justify-content: space-between;
+}
+button{
+padding: 5px 130px;
+font-size: 18px;
+
+}
+.towbutton button,.container button{
+background-color: purple;
+border-radius: 15px;
+border: none;
+transition: all 0.5s ease;
+height: 30px;
+
+}
+.towbutton button:hover{
+    cursor: pointer;
+    transform: scale(1.20);
+    
+
+
+}
+.container button:hover{
+    cursor: pointer;
+    transform: scale(1.15);
+
+}
+.container input:hover{
+    transform: scale(1.15);
+}
+
+#total{
+background-color: hwb(0 3% 0%);
+padding: 12px 5px;
+border-radius: 4px;
+
+}
+#total::before{
+
+content: "TOTAL : ";
+
+
+}
+input:focus{
+font-weight: bold;
+font-size: 18px;
+background-color:#333 ;
+color: #fff;
+
+}
+small{
+    
+color: #fff;
+}
+/* #deleteAll{
+
+    width: 100%;
+
+} */
